@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktlista</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Kontaktlista</h1>
+
+      
+      <section class="create">
+        <h2>Skapa ny kontakt</h2>
+
+        
+        <p id="errorMessage" class="error" aria-live="polite"></p>
+
+        <form id="contactForm" autocomplete="off">
+          <label>
+            Namn
+            <input id="nameInput" type="text" placeholder="Ex: Mohamed" />
+          </label>
+
+          <label>
+            Telefonnummer
+            <input id="phoneInput" type="text" placeholder="Ex: 0701234567" />
+          </label>
+
+          <div class="buttons">
+            <button id="createBtn" type="submit">Skapa</button>
+            
+            <button id="clearBtn" type="button">Radera lista</button>
+          </div>
+        </form>
+      </section>
+
+      
+      <section class="list">
+        <h2>Mina kontakter</h2>
+
+    
+        <div id="contactList"></div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
